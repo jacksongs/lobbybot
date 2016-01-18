@@ -1,12 +1,11 @@
 import tweepy
-import variables
 import os
-import os.path
 
-if os.path.isfile('variables.py') == True:
+try:
+	import variables
 	auth = tweepy.OAuthHandler(variables.CONSUMER_KEY, variables.CONSUMER_SECRET)
 	auth.set_access_token(variables.ACCESS_KEY, variables.ACCESS_SECRET)
-else:
+except:
 	ck = os.environ['MORPH_TWCKEY']
 	cs = os.environ['MORPH_TWCSEC']
 	ak = os.environ['MORPH_TWAKEY']
