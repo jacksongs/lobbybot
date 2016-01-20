@@ -1,1 +1,4 @@
+requests
 tweepy
+BeautifulSoup4
+scraperwiki
