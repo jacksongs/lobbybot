@@ -61,9 +61,9 @@ for kind in tabs.keys():
         data.append(row)
     new[kind] = data
     print 'dbtest:',dbtest
-    if dbtest == False:
-        print 'about to save for',kind
-        scraperwiki.sqlite.save(unique_keys=tabs[kind],data=data,table_name=kind)
+    #if dbtest == False:
+    print 'about to save for',kind
+    scraperwiki.sqlite.save(unique_keys=tabs[kind],data=data,table_name=kind)
 
 if dbtest == True:
     # check for new items not in old items - start them today
