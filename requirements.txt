@@ -1,5 +1,5 @@
 requests
 tweepy
 BeautifulSoup4
-scraperwiki
+-e git://github.com/openaustralia/scraperwiki-python/tree/morph_defaults#egg=scraperwiki
 lxml
