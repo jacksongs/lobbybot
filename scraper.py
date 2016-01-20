@@ -62,6 +62,7 @@ for kind in tabs.keys():
     new[kind] = data
     print 'dbtest:',dbtest
     if dbtest == False:
+        print 'about to save for',kind
         scraperwiki.sqlite.save(unique_keys=tabs[kind],data=data,table_name=kind)
 
 if dbtest == True:
