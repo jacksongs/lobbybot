@@ -1,5 +1,0 @@
-requests
-tweepy
-BeautifulSoup4
--e git://github.com/openaustralia/scraperwiki-python.git#egg=scraperwiki
-lxml
