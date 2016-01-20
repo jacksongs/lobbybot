@@ -17,8 +17,6 @@ import tweet # This is another python script to handle Tweeting (with Tweepy)
 import random
 import time
 
-tweet.this('TESTING!')
-
 tabs = {"agencies":['ABN','Trading Name','Agency Name','Updated'],
        "client": ['Agency Name','Client Name'],
        "lobbyists": ['Agency Name','Lobbyist Name','Lobbyist Position','Former Government Representative','Cessation Date']}
