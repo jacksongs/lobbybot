@@ -17,7 +17,7 @@ import tweet # This is another python script to handle Tweeting (with Tweepy)
 import random
 import time
 
-print os.listdir('.')
+tweet.this('TESTING!')
 
 tabs = {"agencies":['ABN','Trading Name','Agency Name','Updated'],
        "client": ['Agency Name','Client Name'],
@@ -60,10 +60,8 @@ for kind in tabs.keys():
         row[u'End'] = ''
         data.append(row)
     new[kind] = data
-    print 'dbtest:',dbtest
-    #if dbtest == False:
-    print 'about to save for',kind
-    scraperwiki.sqlite.save(unique_keys=tabs[kind],data=data,table_name=kind)
+    if dbtest == False:
+        scraperwiki.sqlite.save(unique_keys=tabs[kind],data=data,table_name=kind)
 
 if dbtest == True:
     # check for new items not in old items - start them today
