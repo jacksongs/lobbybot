@@ -60,6 +60,7 @@ for kind in tabs.keys():
         row[u'End'] = ''
         data.append(row)
     new[kind] = data
+    print 'dbtest:',dbtest
     if dbtest == False:
         scraperwiki.sqlite.save(unique_keys=tabs[kind],data=data,table_name=kind)
 
