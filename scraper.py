@@ -71,7 +71,7 @@ if dbtest == True:
                     #print itemgetter(*tabs[kind])(item),itemgetter(*tabs[kind])(olditem)
                     gothim = True
             if gothim == False:
-                print 'NEW',item
+                #print 'NEW',item
                 item[u'Start'] = unicode(datetime.date.today().strftime("%d-%b-%Y"))
                 item[u'End'] = ''
                 scraperwiki.sqlite.save(unique_keys=tabs[kind],data=item,table_name=kind)
@@ -90,7 +90,7 @@ if dbtest == True:
                 if itemgetter(*tabs[kind])(newitem) == itemgetter(*tabs[kind])(olditem):
                     gothim = True
             if gothim == False:
-                print 'OLD',olditem
+                #print 'OLD',olditem
                 olditem[u'End'] = unicode(datetime.date.today().strftime("%d-%b-%Y"))
                 scraperwiki.sqlite.save(unique_keys=tabs[kind],data=olditem,table_name=kind)
                 if kind=='client':
