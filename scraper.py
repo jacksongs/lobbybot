@@ -17,6 +17,8 @@ import tweet # This is another python script to handle Tweeting (with Tweepy)
 import random
 import time
 
+import tweepy
+import tweet
 print tweepy.__version__
 print tweet.__version__
 
