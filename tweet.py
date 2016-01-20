@@ -14,7 +14,7 @@ except:
 	auth.set_access_token(ak, ase)
 
 def this(x):
-	api = tweepy.API(auth)
+	api = tweepy.API(auth, secure=True)
 	try:
 		api.update_status(x)
 	except:
