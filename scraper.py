@@ -1,9 +1,9 @@
 # This script has two goals:
 # i) To record changes with the lobbyist register and record themm in a sqlite database on Morph.io.
 # ii) To alert people to changes to lobbyists via:
-#   a) mailgun email list (TBC)
+#   a) mailgun email list (still coming)
 #   b) a Twitter bot
-#   c) to politics forum APH.life (TBC)
+#   c) to politics forum APH.life (still coming)
 
 # First let's start with imports
 
@@ -97,6 +97,6 @@ if dbtest == True:
                     tweet.this('%s. %s is no longer lobbying for %s.'%(random.choice(interesting).capitalize(),olditem['Agency Name'],olditem['Client Name']))
                     time.sleep(23)
                 if kind=='lobbyists':
-                    tweet.this('%s. %s is no longer a %s for %s.'%(random.choice(interesting).capitalize(),olditem['Lobbyist Name'],olditem['Lobbyist Position'],item['Agency Name']))
+                    tweet.this('%s. %s is no longer a %s for %s.'%(random.choice(interesting).capitalize(),olditem['Lobbyist Name'],olditem['Lobbyist Position'],olditem['Agency Name']))
                     time.sleep(23)
     
