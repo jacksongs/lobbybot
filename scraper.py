@@ -52,7 +52,7 @@ for kind in tabs.keys():
         row = {}
         tds = tr.find_all('td')
         for i,td in enumerate(tds):
-            tight = td.text.strip().replace("Alkar","BOOOOOO")
+            tight = td.text.strip()
             row[names[i]] = tight
         row[u'Start'] = unicode(datetime.date.today().strftime("%d-%b-%Y"))
         row[u'End'] = ''
